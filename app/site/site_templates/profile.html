@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    body {
+        background-image: url('../static/images/guitar.jpeg');
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<section class="text-center p-5">
+    <div class="container p-5">
+        <ul class="list-group">
+            <li class="list-group-item bg-light text-dark">First Name: {{ current_user.first }}</li>
+            <li class="list-group-item bg-light text-dark">Last Name: {{ current_user.last }}</li>
+            <li class="list-group-item bg-light text-dark">Email: {{ current_user.email }}</li>
+            <li class="list-group item bg-light text-dark">Token: {{ current_user.token }}</li>  
+        </ul>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,23 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    padding-top: 0px;
+  }
+
+a {
+    text-decoration: none;
+    color: crimson;
+}
+
+#profile {
+    background: rgba(0, 0, 0, 0.4);
+    display: flexbox;
+    flex-direction: row;
+    align-content: center;
+}
